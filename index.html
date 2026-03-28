@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<title>Desk Gen V2</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+
+</head>
+
+<body>
+
+<div id="login">
+
+<h1>Desk Gen</h1>
+
+<input type="password" id="key" placeholder="Digite sua KEY">
+
+<button onclick="login()">Entrar</button>
+
+<p id="erro"></p>
+
+</div>
+
+<div id="painel">
+
+<h1 class="logo">Desk Gen V2</h1>
+
+<div class="contador">
+
+Contas geradas: <span id="count">0</span>
+
+</div>
+
+<div class="box">
+
+<select id="tipo">
+
+<option value="gmail">Gmail</option>
+<option value="outlook">Outlook</option>
+<option value="netflix">Netflix</option>
+<option value="spotify">Spotify</option>
+
+</select>
+
+<button onclick="gerar()">Gerar Conta</button>
+
+<textarea id="resultado"></textarea>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

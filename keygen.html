@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Desk Gen - Key Generator</title>
+
+<style>
+
+body{
+background:#0b0b0b;
+color:white;
+font-family:Arial;
+text-align:center;
+padding-top:120px;
+}
+
+h1{
+color:#a855f7;
+font-size:50px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:#a855f7;
+border:none;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+textarea{
+width:350px;
+height:120px;
+margin-top:20px;
+background:black;
+color:#00ff90;
+padding:10px;
+border:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Desk Gen KeyGen</h1>
+
+<button onclick="gerarKey()">Gerar KEY</button>
+
+<br>
+
+<textarea id="resultado"></textarea>
+
+<script>
+
+function gerarKey(){
+
+let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+let key = "DESK-"
+
+for(let i=0;i<4;i++){
+
+key += chars.charAt(Math.floor(Math.random()*chars.length))
+
+}
+
+document.getElementById("resultado").value = key
+
+}
+
+</script>
+
+</body>
+</html>
