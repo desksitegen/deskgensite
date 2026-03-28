@@ -50,13 +50,13 @@ conta = nome+numero+"@outlook.com | "+senha
 
 if(tipo=="netflix"){
 
-conta = "user"+numero+"@email.com | "+senha
+conta = nome+numero+"@gmail.com | "+senha
 
 }
 
 if(tipo=="spotify"){
 
-conta = "spotify"+numero+"@email.com | "+senha
+conta = nome+numero+"@yahoo.com | "+senha
 
 }
 
